@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Иван Баранов](https://up.htmlacademy.ru/htmlcss/14/user/186562).
-* Наставник: `Неизвестно`.
+* Наставник: [Альберт Шариков](https://htmlacademy.ru/profile/insanegrv).
 
 ---
 
