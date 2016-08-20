@@ -1,10 +1,17 @@
 body {
   font-size: 14px;
   line-height: 26px;
-  color: #333333;
-  font-weight: normal;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
+  font-weight: normal;
+  color: #333333;
+}
+
+body,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -13,4 +20,121 @@ h1 {
 
 h2 {
   font-size: 21px;
+}
+
+.container  {
+  width: 1200px;
+  margin: 0 auto;
+  outline: 1px solid pink;
+}
+
+.main-navigation ul {
+  list-style: none;
+}
+
+.main-navigation-left {
+  width: 240px;
+  float: left;
+}
+
+.main-navigation-right {
+  width: 240px;
+  float: right;
+}
+
+.index-image {
+  width: 1200px;
+  height: 508px;
+}
+
+.features-left .features-item {
+  width: 400px;
+  min-height: 256px;
+  float: left;
+  outline: 1px solid pink;
+
+}
+
+.features-left .features-image {
+  width: 800px;
+  height: 256px;
+  float: right;
+  outline: 1px solid pink;
+
+}
+
+.features-right .features-item {
+  width: 400px;
+  min-height: 256px;
+  float: right;
+  outline: 1px solid pink;
+
+}
+
+.features-right .features-image {
+  width: 800px;
+  height: 256px;
+  float: left;
+  outline: 1px solid pink;
+
+}
+
+.recommendations-item {
+  float: left;
+  width: 400px;
+  min-height: 330px;
+}
+
+.features-item {
+  float: left;
+  width: 400px;
+  min-height: 256px;
+}
+
+.footer-hashtag,
+.footer-social,
+.footer-copyright {
+  float: left;
+  width: 400px;
+  min-height: 120px
+}
+
+.search-form .checkbox-column {
+  float: left;
+}
+
+.search-form .price-range {
+  float: right;;
+}
+
+.search-form {
+  outline: 1px solid pink;
+
+}
+
+.search-result-left {
+  float: left;
+}
+
+.search-result-right {
+  float: right;
+}
+
+.search-result-item img {
+  float: left;
+}
+
+.search-result-item-left {
+  float: left;
+}
+
+.search-result-item-right {
+  float: right;
+}
+
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }

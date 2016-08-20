@@ -3,18 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header container">
       <nav class="main-navigation">
-        <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="index.html"><img class="main-header-logo" src="img/sedona-logo.png" width="138" height="70" alt="Седона"></a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+        <ul class="clearfix">
+          <li class="main-navigation-left"><a href="#">Информация</a></li>
+          <li class="main-navigation-left"><a href="#">Фото и видео</a></li>
+          <li class="main-navigation-right"><a href="#">Карта штата</a></li>
+          <li class="main-navigation-right"><a href="hotels.html">Гостиницы</a></li>
         </ul>
+        <a href="index.html"><img class="main-header-logo" src="img/sedona-logo.png" width="138" height="70" alt="Седона"></a></li>
       </nav>
     </header>
     <main class="container">
@@ -23,17 +25,17 @@
       </div>
       <h1>Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-      <div class="features">
+      <div class="features features-left clearfix">
         <section class="features-item">
           <h2>Настоящий городок</h2>
           <span>— №1 —</span>
           <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
         </section>
         <figure class="features-image">
-          <img src="img/feature-1.jpg" width="800" height="256" alt="Город">
+          <img src="img/feature-1.jpg" width="700" height="256" alt="Город">
         </figure>
       </div>
-      <div class="recommendations">
+      <div class="recommendations clearfix">
         <div class="recommendations-item accommodation">
           <img src="img/house.png" width="75" height="72" alt="Жилье">
           <h2>Жилье</h2>
@@ -50,7 +52,7 @@
           <p>Не только китайского, но и местного производства!</p>
         </div>
       </div>
-      <div class="features">
+      <div class="features features-right clearfix">
         <figure class="features-image">
           <img src="img/feature-2.jpg" width="800" height="256" alt="Горы">
         </figure>
@@ -60,7 +62,7 @@
           <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
         </section>
       </div>
-      <div class="features other-features">
+      <div class="features other-features clearfix">
         <section class="features-item">
           <h2>Небольшая площадь</h2>
           <span>— №3 —</span>
@@ -94,7 +96,7 @@
         </form>
       </section>
     </main>
-    <footer class="main-footer container">
+    <footer class="main-footer container clearfix">
       <div class="footer-hashtag">
         <a href="#">#visitsedona</a>
       </div>
