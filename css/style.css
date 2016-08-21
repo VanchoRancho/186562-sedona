@@ -5,6 +5,7 @@ body {
   text-transform: uppercase;
   font-weight: normal;
   color: #333333;
+  background-color: #f2f2f2;
 }
 
 body,
@@ -25,26 +26,60 @@ h2 {
 .container  {
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
   outline: 1px solid pink;
 }
+
+.main-navigation {
+  position: relative;
+}
+
+.main-header-logo {
+  display: block;
+  height: 56px;
+  position: absolute;
+  top : 0px;
+  left: 50%;
+  margin-left: -69px;
+}
+
 
 .main-navigation ul {
   list-style: none;
 }
-
+.main-navigation li {
+padding-top: 15px;
+padding-bottom: 15px;
+}
+.main-navigation a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+.main-navigation a:hover {
+  color: #81b3d2;
+}
+.main-navigation a:active {
+  color: #000000;
+  opacity: 0.3;
+}
 .main-navigation-left {
   width: 240px;
   float: left;
+  text-align: center;
 }
-
 .main-navigation-right {
   width: 240px;
   float: right;
+  text-align: center;
 }
 
 .index-image {
   width: 1200px;
   height: 508px;
+  overflow: hidden;
+  margin-bottom: 63px;
 }
 
 .features-left .features-item {
@@ -52,7 +87,11 @@ h2 {
   min-height: 256px;
   float: left;
   outline: 1px solid pink;
+}
 
+main h1,
+main p {
+  text-align: center;
 }
 
 .features-left .features-image {
@@ -104,7 +143,7 @@ h2 {
 }
 
 .search-form .price-range {
-  float: right;;
+  1float: right;;
 }
 
 .search-form {
@@ -118,6 +157,10 @@ h2 {
 
 .search-result-right {
   float: right;
+}
+
+.search-result-item  {
+  outline: 1px solid pink;
 }
 
 .search-result-item img {
