@@ -219,7 +219,7 @@ h2 {
 }
 .booking-map {
     outline: 1px solid pink;
-    min-height: 473px;
+    min-height: 593px;
     background: url("../img/map.jpg") no-repeat;
 }
 .booking-search-form {
@@ -228,6 +228,8 @@ h2 {
 
 .main-footer {
   min-width: 120px;
+  margin-top: -120px;
+  opacity: 0.9;
 }
 .footer-hashtag,
 .footer-social,
