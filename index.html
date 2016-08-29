@@ -13,7 +13,7 @@
         <ul>
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
-          <li class="main-header-logo"><a href="index.html"><img src="img/sedona-logo.png" width="138" height="70" alt="Седона"></a></li>
+          <li class="main-header-logo"><a class="logo" href="index.html"><img src="img/sedona-logo.png" width="138" height="70" alt="Седона"></a></li>
           <li><a href="#">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
@@ -85,23 +85,23 @@
         <header class="booking-header">
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-          <a class="booking-search-btn" href="">Поиск гостиницы в Седоне</a>
+          <a class="booking-search-btn" href="#">Поиск гостиницы в Седоне</a>
         </header>
-        <div class="booking-map"></div>
         <form class="booking-search-form" action="">
-          <label for="date-in">Дата заезда</label>
+          <label for="date-in">Дата заезда:</label>
           <input type="date" id="date-in" name="date-in" value="2016-04-24">
-          <label for="date-out">Дата заезда</label>
+          <label for="date-out">Дата заезда:</label>
           <input type="date" id="date-out" name="date-out" value="2016-07-04">
-          <label for="adults">Взрослые</label>
-          <input type="number" id="adults" name="adults">
-          <label for="children">Дети</label>
-          <input type="number" id="children" name="children">
-          <button class="btn" type="submit">Найти</button>
+          <label for="adults">Взрослые:</label>
+          <input type="number" id="adults" name="adults" value="2">
+          <label for="children">Дети:</label>
+          <input type="number" id="children" name="children" value="0">
+          <button class="booking-search-form-btn" type="submit">Найти</button>
         </form>
+        <div class="booking-map"></div>
       </section>
     </main>
-    <footer class="main-footer container clearfix">
+    <footer class="main-footer container index-page clearfix">
       <div class="footer-hashtag">
         <a href="#">#visitsedona</a>
       </div>
@@ -115,5 +115,29 @@
         <a href="#">HTML Academy</a>
       </div>
     </footer>
+    <script type="text/javascript">
+      var link = document.querySelector(".booking-search-btn");
+      var popup = document.querySelector(".booking-search-form");
+      var send = document.querySelector(".booking-search-form-btn");
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        if (popup.classList.contains("booking-search-form-show")) {
+          popup.classList.remove("booking-search-form-show");
+          popup.classList.add("booking-search-form-hide");
+        } else {
+          popup.classList.remove("booking-search-form-hide");
+          popup.classList.remove("booking-search-form-send");
+          popup.classList.add("booking-search-form-show");
+        }
+      });
+      send.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("booking-search-form-send");
+        setTimeout(function(event) {popup.classList.remove("booking-search-form-show");
+      }, 500);
+      });
+
+
+    </script>
   </body>
 </html>
