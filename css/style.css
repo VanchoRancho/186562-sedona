@@ -331,7 +331,7 @@ h2 {
   margin-bottom: 48px;
 }
 
-.booking-search-btn {
+.booking-btn {
   display: block;
   width: 568px;
   min-height: 26;
@@ -355,7 +355,7 @@ h2 {
   background: url("../img/map.jpg") no-repeat;
 }
 
-.booking-search-form {
+.booking-form {
   position: absolute;
   left: 0;
   right: 0;
@@ -381,7 +381,7 @@ h2 {
 
 }
 
-.booking-search-form label {
+.booking-form .form-item {
   position: relative;
 
   display: block;
@@ -392,18 +392,18 @@ h2 {
   line-height: 0;
 }
 
-.booking-search-form label[for="adults"],
-.booking-search-form label[for="children"] {
+.booking-form .adults,
+.booking-form .children {
   display: inline-block;
   vertical-align: baseline;
   width: 226px;
 }
 
-.booking-search-form label[for="children"] {
+.booking-form .children {
   margin-left: 6px;
 }
 
-.booking-search-form .label-text {
+.booking-form .label-text {
   display: inline-block;
   vertical-align: baseline;
   width: 112px;
@@ -412,12 +412,12 @@ h2 {
   line-height: 26px;
 }
 
-.booking-search-form label[for="children"] .label-text {
+.booking-form .children .label-text {
   width: 66px;
   padding-left: 48px;
 }
 
-.booking-search-form input {
+.booking-form input {
   display: inline-block;
   vertical-align: baseline;
   height: 26px;
@@ -431,19 +431,19 @@ h2 {
   background-color: #f2f2f2;
 }
 
-.booking-search-form input:hover {
+.booking-form input:hover {
   border: 2px solid #ebebeb;
   background-color: #ebebeb;
 }
 
-.booking-search-form input:focus {
+.booking-form input:focus {
   outline: none;
   border: 2px solid #e5e5e5;
   background-color: transparent;;
 }
 
-.booking-search-form input[id="date-in"],
-.booking-search-form input[id="date-out"] {
+.booking-form input[id="date-in"],
+.booking-form input[id="date-out"] {
   width: 293px;
   margin: 0;
   padding-left: 13px;
@@ -452,8 +452,8 @@ h2 {
   padding-bottom: 4px;
 }
 
-.booking-search-form input[id="adults"],
-.booking-search-form input[id="children"] {
+.booking-form input[id="adults"],
+.booking-form input[id="children"] {
   width: 36px;
   margin: 0;
   padding-left: 36px;
@@ -491,18 +491,18 @@ h2 {
   color: #81b3d2;
 }
 
-.booking-search-form-minus-btn,
-.booking-search-form-plus-btn {
+.booking-form-minus-btn,
+.booking-form-plus-btn {
   font-size: 14px;
 
   color: #a9a9a9;
 }
 
-.booking-search-form-minus-btn {
+.booking-form-minus-btn {
   left: 114px;
 }
 
-.booking-search-form-btn {
+.booking-form-search-btn {
   display: block;
   width: 100%;
   margin-top: 23px;
@@ -522,11 +522,11 @@ h2 {
   cursor: pointer;
 }
 
-.booking-search-form-btn:hover {
+.booking-form-search-btn:hover {
   background-color: #669ec0;
 }
 
-.booking-search-form-btn:active {
+.booking-form-search-btn:active {
   color: #88b6d1;
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
@@ -616,7 +616,7 @@ h2 {
   }
 }
 
-.booking-search-form-show{
+.booking-form-show{
   display: block;
 
   -webkit-animation: show 500ms ease-in-out forwards;
@@ -624,7 +624,7 @@ h2 {
           animation: show 500ms ease-in-out forwards;
 }
 
-.booking-search-form-hide{
+.booking-form-hide{
   display: block;
 
   -webkit-animation: hide 500ms ease-in-out forwards;
@@ -632,7 +632,7 @@ h2 {
           animation: hide 500ms ease-in-out forwards;
 }
 
-.booking-search-form-send{
+.booking-form-send{
   -webkit-animation: send 500ms ease-in-out forwards;
           animation: send 500ms ease-in-out forwards;
 }
@@ -1061,7 +1061,7 @@ h2 {
   margin-bottom: 32px;
 }
 
-.search-sort > * {
+.search-sort-left > * {
   display: inline-block;
 
   vertical-align: baseline;

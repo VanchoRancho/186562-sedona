@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header container">
@@ -24,14 +24,14 @@
         <img src="img/index-img.png" width="458" height="352" alt="Sedona">
       </div>
       <header class="content-header">
-        <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </header>
       <section class="features features-left clearfix">
         <div class="features-item">
           <h2>Настоящий городок</h2>
           <p>— №1 —</p>
-          <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <figure class="features-image">
           <img src="img/feature-1.jpg" width="800" height="256" alt="Город">
@@ -85,43 +85,43 @@
         <header class="booking-header">
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-          <a class="booking-search-btn" href="#">Поиск гостиницы в Седоне</a>
+          <a class="booking-btn" href="#">Поиск гостиницы в Седоне</a>
         </header>
-        <form class="booking-search-form" action="/echo" method="post">
-          <label for="date-in">
-            <span class="label-text">Дата заезда:</span>
+        <form class="booking-form" action="/echo" method="post">
+          <div class="form-item date-in">
+            <label for="date-in" class="label-text">Дата заезда:</label>
             <input type="text" id="date-in" name="date-in" value="24 апреля 2016" required>
-            <button class="booking-form-input-btn booking-search-form-calendar-btn" type="button"><span class="icon-calendar"></span></button>
-          </label>
-          <label for="date-out">
-            <span class="label-text">Дата выезда:</span>
+            <button class="booking-form-input-btn booking-form-calendar-btn" type="button"><span class="icon-calendar"></span></button>
+          </div>
+          <div class="form-item date-out">
+            <label for="date-out" class="label-text">Дата выезда:</label>
             <input type="text" id="date-out" name="date-out" value="4 июля 2016">
-            <button class="booking-form-input-btn booking-search-form-calendar-btn" type="button"><span class="icon-calendar"></span></button>
-          </label>
-          <label for="adults">
-            <span class="label-text">Взрослые:</span>
+            <button class="booking-form-input-btn booking-form-calendar-btn" type="button"><span class="icon-calendar"></span></button>
+          </div>
+          <div class="form-item adults">
+            <label for="adults" class="label-text">Взрослые:</label>
             <input type="text" id="adults" name="adults" value="2">
-            <button class="booking-form-input-btn booking-search-form-minus-btn" type="button">
+            <button class="booking-form-input-btn booking-form-minus-btn" type="button">
               <span class="icon-minus"></span>
             </button>
-            <button class="booking-form-input-btn booking-search-form-plus-btn" type="button">
+            <button class="booking-form-input-btn booking-form-plus-btn" type="button">
               <span class="icon-plus"></span>
             </button>
-          </label>
-          <label for="children">
-            <span class="label-text">Дети:</span>
+          </div>
+          <div class="form-item children">
+            <label for="children" class="label-text">Дети:</label>
             <input type="text" id="children" name="children" value="0" required>
-            <button class="booking-form-input-btn booking-search-form-minus-btn" type="button">
+            <button class="booking-form-input-btn booking-form-minus-btn" type="button">
               <span class="icon-minus"></span>
             </button>
-            <button class="booking-form-input-btn booking-search-form-plus-btn" type="button">
+            <button class="booking-form-input-btn booking-form-plus-btn" type="button">
               <span class="icon-plus"></span>
             </button>
-          </label>
-          <button class="booking-search-form-btn" type="submit">Найти</button>
+          </div>
+          <button class="booking-form-search-btn" type="submit">Найти</button>
         </form>
         <div class="booking-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498436.17743315944!2d-111.81958623393693!3d34.8442127373867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1472924317152" width="1200" height="585" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498436.17743315944!2d-111.81958623393693!3d34.8442127373867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1472924317152" width="1200" height="585" style="border:0" allowfullscreen></iframe>
         </div>
       </section>
     </main>
@@ -139,6 +139,6 @@
         <a href="https://htmlacademy.ru/">HTML Academy</a>
       </div>
     </footer>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.min.js"></script>
   </body>
 </html>
