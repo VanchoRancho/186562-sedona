@@ -95,12 +95,12 @@
           </label>
           <label for="date-out">
             <span class="label-text">Дата выезда:</span>
-            <input type="text" id="date-out" name="date-out" value="4 июля 2016"required>
+            <input type="text" id="date-out" name="date-out" value="4 июля 2016">
             <button class="booking-form-input-btn booking-search-form-calendar-btn" type="button"><span class="icon-calendar"></span></button>
           </label>
           <label for="adults">
             <span class="label-text">Взрослые:</span>
-            <input type="text" id="adults" name="adults" value="2"required>
+            <input type="text" id="adults" name="adults" value="2">
             <button class="booking-form-input-btn booking-search-form-minus-btn" type="button">
               <span class="icon-minus"></span>
             </button>
@@ -136,32 +136,9 @@
       </div>
       <div class="footer-copyright">
         <span>website by</span>
-        <a href="#">HTML Academy</a>
+        <a href="https://htmlacademy.ru/">HTML Academy</a>
       </div>
     </footer>
-    <script type="text/javascript">
-      var link = document.querySelector(".booking-search-btn");
-      var popup = document.querySelector(".booking-search-form");
-      var send = document.querySelector(".booking-search-form-btn");
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
-        if (popup.classList.contains("booking-search-form-show")) {
-          popup.classList.remove("booking-search-form-show");
-          popup.classList.add("booking-search-form-hide");
-        } else {
-          popup.classList.remove("booking-search-form-hide");
-          popup.classList.remove("booking-search-form-send");
-          popup.classList.add("booking-search-form-show");
-        }
-      });
-      send.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.add("booking-search-form-send");
-        setTimeout(function(event) {popup.classList.remove("booking-search-form-show");
-      }, 500);
-      });
-
-
-    </script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
