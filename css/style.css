@@ -4,7 +4,6 @@ body {
   line-height: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
-
   color: #333333;
   background-color: #f2f2f2;
 }
@@ -96,8 +95,8 @@ h2 {
 .main-navigation li {
   display: inline-block;
   width: 240px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 14px;
+  padding-bottom: 16px;
 
   vertical-align: top;
   text-align: center;
@@ -191,13 +190,22 @@ h2 {
   padding-bottom: 51px;
 }
 
+.features {
+  background-color: #81b3d2;
+}
+
 .features-item {
   float: left;
-  width: 400px;
-  min-height: 256px;
+  width: 320px;
+  min-height: 176px;
+  padding: 40px;
+
 }
 
 .features .features-item {
+  min-height: 161px;
+  padding-top: 55px;
+
   line-height: 21px;
   text-align: center;
 
@@ -206,6 +214,9 @@ h2 {
 }
 
 .other-features .features-item {
+  min-height: 168px;
+  padding-top: 48px;
+
   color: #000000;
   background-color: #eeeeee;
 
@@ -217,13 +228,8 @@ h2 {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 24px;
-  padding-top: 55px;
 
   font-weight: 700;
-}
-
-.other-features .features-item h2 {
-  padding-top: 48px;
 }
 
 .features-item p {
@@ -240,8 +246,6 @@ h2 {
 
 .features-left .features-item {
   float: left;
-  width: 400px;
-  min-height: 256px;
 }
 
 .features-left .features-image {
@@ -252,8 +256,7 @@ h2 {
 
 .features-right .features-item {
   float: right;
-  width: 400px;
-  min-height: 256px;
+
 }
 
 .features-right .features-image {
@@ -644,6 +647,7 @@ h2 {
 .main-footer.index-page {
   margin-top: -120px;
 
+  background-color: #ffffff;
   opacity: 0.9;
 }
 
@@ -770,7 +774,7 @@ h2 {
 .footer-copyright span {
   display: inline-block;
   margin: 0;
-  margin-right: 7px;
+  margin-right: 5px;
   padding: 0;
 
   font-size: 14px;
@@ -955,6 +959,7 @@ h2 {
   margin: 0;
 
   font: inherit;
+  line-height: 14px;
 
   color: inherit;
   background: none;
@@ -1051,10 +1056,13 @@ h2 {
 
 .search-sort-left {
   float: left;
+  max-width: 800px;
+
 }
 
 .search-sort-right {
   float: right;
+  max-width: 356px;
   font-size: 0;
   line-height: 0;
   margin-top: 32px;
@@ -1174,6 +1182,7 @@ h2 {
 
 .search-result-left {
   float: left;
+  max-width: 700px;
   min-height: 90px;
 
   font-size: 0;
@@ -1207,6 +1216,8 @@ h2 {
 .search-result-left .col-1,
 .search-result-left .col-2 {
   display: inline-block;
+  max-width: 200px;
+
   margin-right: 6px;
 
   font-size: 14px;
@@ -1237,6 +1248,7 @@ h2 {
 
   font-weight: 700;
   text-decoration: none;
+  text-align: center;
 
   color: #ffffff;
 }
@@ -1272,6 +1284,7 @@ h2 {
 
 .search-result-right {
   float: right;
+  max-width: 150px;
 }
 
 .search-result-right .stars {
