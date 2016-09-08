@@ -194,12 +194,15 @@ h2 {
   background-color: #81b3d2;
 }
 
+.other-features {
+  background-color: #ffffff;
+}
+
 .features-item {
   float: left;
   width: 320px;
   min-height: 176px;
   padding: 40px;
-
 }
 
 .features .features-item {
@@ -384,7 +387,7 @@ h2 {
 
 }
 
-.booking-form .form-item {
+.booking-form-item {
   position: relative;
 
   display: block;
@@ -398,7 +401,7 @@ h2 {
 .booking-form .adults,
 .booking-form .children {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: bottom;
   width: 226px;
 }
 
@@ -408,21 +411,21 @@ h2 {
 
 .booking-form .label-text {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;;
   width: 112px;
 
   font-size: 14px;
   line-height: 26px;
 }
 
-.booking-form .children .label-text {
+.booking-form-item.children .label-text {
   width: 66px;
   padding-left: 48px;
 }
 
 .booking-form input {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   height: 26px;
   margin: 0;
 
@@ -494,15 +497,24 @@ h2 {
   color: #81b3d2;
 }
 
-.booking-form-minus-btn,
-.booking-form-plus-btn {
-  font-size: 14px;
+.booking-form-input-btn {
+  font-size: 0;
+  line-height: 0;
 
   color: #a9a9a9;
 }
 
 .booking-form-minus-btn {
   left: 114px;
+}
+
+.booking-form-input-btn.icon-calendar::before {
+  font-size: 21px;
+}
+
+.booking-form-input-btn.icon-minus::before,
+.booking-form-input-btn.icon-plus::before {
+  font-size: 14px;
 }
 
 .booking-form-search-btn {
@@ -939,7 +951,7 @@ h2 {
 
   font-size: 14px;
   line-height: 32px;
-  vertical-align: baseline;;
+  vertical-align: bottom;;
 
   cursor: pointer;
 }
@@ -1072,7 +1084,7 @@ h2 {
 .search-sort-left > * {
   display: inline-block;
 
-  vertical-align: baseline;
+  vertical-align: bottom;
 }
 
 .search-sort .number {
@@ -1222,7 +1234,7 @@ h2 {
 
   font-size: 14px;
   line-height: 21px;
-  vertical-align: baseline;
+  vertical-align: bottom;
 }
 
 .search-result-left .type,

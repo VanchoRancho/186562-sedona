@@ -34,9 +34,7 @@
             <p>— №1 —</p>
             <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <figure class="features-image">
-            <img src="img/feature-1.jpg" width="800" height="256" alt="Город">
-          </figure>
+          <img class="features-image" src="img/feature-1.jpg" width="800" height="256" alt="Город">
         </section>
         <section class="recommendations clearfix">
           <div class="recommendations-item accommodation">
@@ -56,9 +54,7 @@
           </div>
         </section>
         <section class="features features-right clearfix">
-          <figure class="features-image">
-            <img src="img/feature-2.jpg" width="800" height="256" alt="Горы">
-          </figure>
+          <img class="features-image" src="img/feature-2.jpg" width="800" height="256" alt="Горы">
           <div class="features-item">
             <h2>Там есть мост дьявола</h2>
             <p>— №2 —</p>
@@ -89,35 +85,27 @@
             <a class="booking-btn" href="#">Поиск гостиницы в Седоне</a>
           </header>
           <form class="booking-form" action="/echo" method="post">
-            <div class="form-item date-in">
+            <div class="booking-form-item date-in">
               <label for="date-in" class="label-text">Дата заезда:</label>
               <input type="text" id="date-in" name="date-in" value="24 апреля 2016" required>
-              <button class="booking-form-input-btn booking-form-calendar-btn" type="button"><span class="icon-calendar"></span></button>
+              <button class="booking-form-input-btn booking-form-calendar-btn icon-calendar" type="button">Календарь</button>
             </div>
-            <div class="form-item date-out">
+            <div class="booking-form-item date-out">
               <label for="date-out" class="label-text">Дата выезда:</label>
               <input type="text" id="date-out" name="date-out" value="4 июля 2016">
-              <button class="booking-form-input-btn booking-form-calendar-btn" type="button"><span class="icon-calendar"></span></button>
+              <button class="booking-form-input-btn booking-form-calendar-btn icon-calendar" type="button">Календарь</button>
             </div>
-            <div class="form-item adults">
+            <div class="booking-form-item adults">
               <label for="adults" class="label-text">Взрослые:</label>
               <input type="text" id="adults" name="adults" value="2">
-              <button class="booking-form-input-btn booking-form-minus-btn" type="button">
-                <span class="icon-minus"></span>
-              </button>
-              <button class="booking-form-input-btn booking-form-plus-btn" type="button">
-                <span class="icon-plus"></span>
-              </button>
+              <button class="booking-form-input-btn booking-form-minus-btn icon-minus" type="button">Минус</button>
+              <button class="booking-form-input-btn booking-form-plus-btn icon-plus" type="button">Плюс</button>
             </div>
-            <div class="form-item children">
+            <div class="booking-form-item children">
               <label for="children" class="label-text">Дети:</label>
-              <input type="text" id="children" name="children" value="0" required>
-              <button class="booking-form-input-btn booking-form-minus-btn" type="button">
-                <span class="icon-minus"></span>
-              </button>
-              <button class="booking-form-input-btn booking-form-plus-btn" type="button">
-                <span class="icon-plus"></span>
-              </button>
+              <input type="text" id="children" name="children" value="0">
+              <button class="booking-form-input-btn booking-form-minus-btn icon-minus" type="button">Минус</button>
+              <button class="booking-form-input-btn booking-form-plus-btn icon-plus" type="button">Плюс</button>
             </div>
             <button class="booking-form-search-btn" type="submit">Найти</button>
           </form>
