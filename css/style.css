@@ -57,6 +57,23 @@ body {
 .icon-minus::before { content: "\e802"; } /* "" */
 
 .icon-youtube::before { content: "\f39e"; } /* "" */
+.icon-4stars::before {
+  content: "\2605\2605\2605\2605";
+  width: 100%;
+  letter-spacing: 0.4em;
+}
+
+.icon-3stars::before {
+  content: "\2605 \2605 \2605";
+  width: 100%;
+  letter-spacing: 0.4em;
+}
+
+.icon-2stars::before {
+  content: "\2605 \2605";
+  width: 100%;
+  letter-spacing: 0.4em;
+}
 
 .clearfix::after {
   content: "";
@@ -195,7 +212,7 @@ h2 {
 }
 
 .other-features {
-  background-color: #ffffff;
+  background-color: #eeeeee;
 }
 
 .features-item {
@@ -859,7 +876,7 @@ h2 {
   line-height: 21px;
 }
 
-.checkbox-field {
+.checkbox-column-item{
   position: relative;
 
   display: block;
@@ -872,15 +889,19 @@ h2 {
   cursor: pointer;
 }
 
-.checkbox-field:last-child {
+.checkbox-column-item:last-child {
   margin-bottom: 0;
 }
 
-.checkbox-field input[type="checkbox"] {
+.checkbox-column-item input[type="checkbox"] {
   display: none;
 }
 
-.checkbox-field input[type="checkbox"] + .checkbox-indicator::before {
+.checkbox-column-item label {
+  cursor: pointer;
+}
+
+.checkbox-column-item label::before {
   content: "\2610";
   position: absolute;
   top: 0;
@@ -888,13 +909,16 @@ h2 {
 
   font-family: "symbols-sedona";
   font-size: 26px;
+
+  cursor: pointer;
+
 }
 
-.checkbox-field input[type="checkbox"]:disabled + .checkbox-indicator::before {
+.checkbox-column-item input[type="checkbox"]:disabled + label::before {
   color: #6a6a6a;
 }
 
-.checkbox-field input[type="checkbox"]:checked + .checkbox-indicator::before {
+.checkbox-column-item input[type="checkbox"]:checked + label::before {
   content: "\2611";
 }
 
@@ -1300,18 +1324,20 @@ h2 {
 }
 
 .search-result-right .stars {
+  display: block;
   margin-bottom: 44px;
+  margin-right: -7px;
+
 
   font-size: 0;
   line-height: 0;
-  text-align: right;
 }
 
-.stars .icon-star::before {
-  margin-left: 5px;
-
+.search-result-right .stars::before {
   font-size: 19px;
   line-height: 19px;
+  text-align: right;
+
 
   color: #81b3d2;
 }
